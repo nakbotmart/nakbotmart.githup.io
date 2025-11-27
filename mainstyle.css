@@ -1,0 +1,184 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+nav{
+    padding: 1rem;
+    background-color: #333;
+}
+
+.nav-con{
+     display: flex;
+     justify-content: space-between;
+}
+
+.logo a{
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu{
+ display: flex;
+ list-style: none;
+ align-items: center;
+}
+
+.menu li{
+ margin: 0 1rem;
+}
+
+.menu li a{
+ color: #fff;
+ text-decoration: none;
+}
+
+.maincontent{
+    background-color: #918d8d;
+}
+
+.maincontent-con{
+    display: flex;
+}
+
+.maincontent-info{
+    width: 100%;
+    padding: 2rem;
+}
+
+.maincontent-info h3{
+    font-size: 2rem;
+}
+
+.maincontent-info p{
+    margin: 1rem 0;
+}
+
+
+
+.maincontent-img{
+    width: 100%;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.content-con{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.content-title{
+    margin: 2rem 0;
+}
+
+.content-item img{
+    width: 100%;
+}
+
+.content-item h4{
+    margin-top: 1rem;
+}
+
+.content-item p{
+    margin: 1rem 0;
+}
+
+.content-item button{
+    display: inline-block;
+    color: #fff;
+    background-color: #182c56;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.footer-top{
+    margin-top: 2rem;
+    padding: 3rem;
+    background-color: rgb(57, 57, 57);
+    color: #fff;
+}
+
+.footer-top-item h4{
+    text-align: center;
+}
+.date{
+    line-height: 2;
+    text-align: center;
+}
+.footer-bottom{
+    background-color: #918d8d;
+    padding: 1rem;
+    text-align: center;
+}
+#popup-contatiner {
+    width: 50rem;
+    height: 30rem;
+    background:#ffffff;
+    border: 0.2rem solid #333;
+    position: fixed;
+    top: calc(50% - 15rem);
+    left: calc(50% - 25rem);
+
+    overflow: hidden;
+    
+    box-sizing: border-box;
+
+    flex-direction: column;
+}
+#popup-contatiner[data-enable="on"] {
+    animation: smo .2s linear;
+}
+#popup-contatiner[data-enable="off"] {
+    display: none;
+}
+
+#popup-exit{
+    width: 1rem;
+    aspect-ratio: 1;
+    position: sticky;
+    float: right;
+    top: 0;
+    left: 0;
+
+    z-index: 2;
+}
+
+#content-2{
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+}
+
+#content-2 img {
+    display: block;
+    border: 0.2rem solid #4a5f88;
+   
+}
+
+.essayStyle.css img{
+    display: block;
+    overflow: clip;
+    padding: 1rem;
+}
+
+
+@keyframes smo {
+    0% {
+        opacity: 0%;
+        transform: translate(-1rem 0rem);
+    }
+    100% {
+        opacity: 100%;
+        transform: translate(0rem 0rem);
+    }
+}

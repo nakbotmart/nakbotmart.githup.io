@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #767893;
+    padding: 0 2rem 0 2rem;
+}
+header h1{
+    font-family: "Science Gothic";
+    /* padding-left: 2rem; */
+}
+header nav {
+    margin: auto 0;
+}
+header a{
+    color: #0e0d0d;
+}
+#main-img {
+    width: 200%; height: auto;
+}
+    
+main {
+    display: flex;
+}
